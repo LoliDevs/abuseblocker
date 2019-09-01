@@ -1,0 +1,7 @@
+name: Abuseblocker
+version: 1.0
+main: lolidevs.abuseblocker.Abuseblocker
+api-version: 1.13
+authors: [roridev]
+description: Blocks admin abuse.
+website: https://www.github.com/lolidevs/abuseblocker
