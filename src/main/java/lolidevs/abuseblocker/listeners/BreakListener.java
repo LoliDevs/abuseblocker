@@ -1,6 +1,6 @@
 package lolidevs.abuseblocker.listeners;
 
-import org.bukkit.ChatColor;
+import lolidevs.abuseblocker.utils.Logger;
 import org.bukkit.GameMode;
 import org.bukkit.block.Barrel;
 import org.bukkit.block.Chest;
@@ -31,7 +31,7 @@ public class BreakListener implements Listener {
                 else
                 {
                     event.setCancelled(true);
-                    p.sendMessage(ChatColor.WHITE+"["+ChatColor.RED+"AbuseBlocker"+ChatColor.WHITE+"] Parece que este " +ChatColor.GRAY+ event.getBlock().getType().name() + ChatColor.WHITE+" possui items.");
+                    Logger.LogCONTAINERHASITEM(p,event.getBlock());
                 }
             }
             else if(event.getBlock().getState() instanceof ShulkerBox)
@@ -45,7 +45,7 @@ public class BreakListener implements Listener {
                 else
                 {
                     event.setCancelled(true);
-                    p.sendMessage(ChatColor.WHITE+"["+ChatColor.RED+"AbuseBlocker"+ChatColor.WHITE+"] Parece que este " +ChatColor.GRAY+ event.getBlock().getType().name() + ChatColor.WHITE+" possui items.");
+                    Logger.LogCONTAINERHASITEM(p,event.getBlock());
                 }
             }
             else if(event.getBlock().getState() instanceof Barrel)
@@ -59,7 +59,7 @@ public class BreakListener implements Listener {
                 else
                 {
                     event.setCancelled(true);
-                    p.sendMessage(ChatColor.WHITE+"["+ChatColor.RED+"AbuseBlocker"+ChatColor.WHITE+"] Parece que este " +ChatColor.GRAY+ event.getBlock().getType().name() + ChatColor.WHITE+" possui items.");
+                    Logger.LogCONTAINERHASITEM(p,event.getBlock());
                 }
             }
 

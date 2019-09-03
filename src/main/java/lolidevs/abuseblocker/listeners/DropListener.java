@@ -1,6 +1,6 @@
 package lolidevs.abuseblocker.listeners;
 
-import org.bukkit.ChatColor;
+import lolidevs.abuseblocker.utils.Logger;
 import org.bukkit.GameMode;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -16,8 +16,7 @@ public class DropListener implements Listener {
         if(p.getGameMode().equals(GameMode.CREATIVE))
         {
             event.setCancelled(true);
-            p.sendMessage(ChatColor.WHITE + "["+ChatColor.RED+"AbuseBlocker"+ChatColor.WHITE+"] Impossivel dropar no modo CRIATIVO");
-
+            Logger.LogDROP(p);
         }
     }
     @EventHandler
