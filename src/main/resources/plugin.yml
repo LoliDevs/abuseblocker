@@ -1,7 +1,8 @@
 name: Abuseblocker
-version: "1.1"
-main: lolidevs.abuseblocker.Abuseblocker
-api-version: "1.13"
+version: ${project.version}
+main: me.roridev.abuseblocker.AbuseBlocker
+api-version: 1.13
+prefix: AbuseBlocker
 authors: [roridev]
-description: Blocks admin abuse.
-website: https://www.github.com/lolidevs/abuseblocker
+description: Blocks admin abuse
+website: https://github.com/lolidevs/abuseblocker
